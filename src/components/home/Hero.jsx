@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useProducts } from "@/context/ProductContext";
 import { MoveRight, ShoppingBag, Loader2 } from "lucide-react";
+import Loading from "../ui/Loading";
 
 const Hero = () => {
   const { products, loading } = useProducts();
@@ -18,8 +19,8 @@ const Hero = () => {
 
   if (loading) {
     return (
-      <div className="w-full h-[75vh] bg-secondary/5 animate-pulse rounded-2xl mt-4 flex items-center justify-center">
-        <Loader2 className="animate-spin text-primary" size={30} />
+      <div className="w-full h-[75vh] min-h-[500px] mt-4 rounded-2xl overflow-hidden">
+        <Loading text="Fetching Latest Trends" />
       </div>
     );
   }
