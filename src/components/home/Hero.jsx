@@ -26,7 +26,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="relative w-full h-[75vh] min-h-[500px] mt-4 overflow-hidden rounded-2xl bg-secondary group">
+    <section className="relative w-full h-[75vh] min-h-[500px] overflow-hidden  bg-secondary group">
       {products.map((product, index) => (
         <div
           key={product.id}
@@ -47,7 +47,7 @@ const Hero = () => {
             <div className={`max-w-2xl space-y-5 transition-all duration-700 delay-200 ${
               index === currentSlide ? "opacity-100 translate-y-0" : "opacity-100 translate-y-8"
             }`}>
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/30 backdrop-blur-md rounded-full text-primary text-[10px] font-bold uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/30 backdrop-blur-md rounded-full text-white text-[10px] font-bold uppercase tracking-widest">
                 Featured {product.category}
               </div>
 
@@ -62,7 +62,7 @@ const Hero = () => {
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link
                   href={`/product/${product.slug}`}
-                  className="flex items-center gap-2 bg-primary text-secondary px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition-all duration-300"
+                  className="flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition-all duration-300"
                 >
                   Shop Now <ShoppingBag size={16} />
                 </Link>

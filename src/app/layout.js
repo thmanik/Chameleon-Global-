@@ -24,7 +24,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="light" style={{ colorScheme: 'light' }} suppressHydrationWarning>
       <body 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning={true} 
@@ -33,11 +33,13 @@ export default function RootLayout({ children }) {
           <CurrencyProvider>
             <CartProvider>
             <ProductProvider> 
+              <div className="max-w-[1600px] mx-auto bg-white shadow-2xl min-h-screen flex flex-col">
               <Navbar /> 
-              <main className="container mx-auto px-4 py-2">
+              <main className="container w-full mx-auto py-2">
                 {children}
               </main>
               <Footer/>
+              </div>
             </ProductProvider>
             </CartProvider>
           </CurrencyProvider>
