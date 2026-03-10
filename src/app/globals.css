@@ -38,6 +38,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* সাইড স্ক্রলিং বন্ধ করতে */
+    overflow-x: hidden;
   }
 }
