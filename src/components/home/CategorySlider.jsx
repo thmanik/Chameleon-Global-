@@ -41,7 +41,7 @@ export default function CategorySlider() {
 
   return (
     <section className="py-2 md:py-0.5 bg-white">
-      <div className="w-full mx-auto px-1">
+      <div className="w-full mx-auto px-2">
         
         <CategoryHeader onScroll={handleScroll} />
 

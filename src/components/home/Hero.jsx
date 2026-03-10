@@ -44,8 +44,8 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent" />
           </div>
 
-          <div className="relative h-full container mx-auto px-6 lg:px-12 flex items-center">
-            <div className={`max-w-2xl space-y-5 transition-all duration-700 delay-200 ${
+          <div className="relative h-full container mx-auto px-2 md:px-5 flex items-center">
+            <div className={`w-full space-y-5 transition-all duration-700 delay-200 ${
               index === currentSlide ? "opacity-100 translate-y-0" : "opacity-100 translate-y-8"
             }`}>
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/30 backdrop-blur-md rounded-full text-white text-[10px] font-bold uppercase tracking-widest">

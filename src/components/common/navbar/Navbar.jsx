@@ -54,7 +54,7 @@ const Navbar = () => {
     >
       <TopBar user={user} />
 
-      <div className="container mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
+      <div className="mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
         <button
           className="lg:hidden p-2 -ml-2 text-secondary"
           onClick={() => setIsMobileMenuOpen(true)}

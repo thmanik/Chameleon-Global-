@@ -32,15 +32,15 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <CurrencyProvider>
             <CartProvider>
-            <ProductProvider> 
-              <div className="max-w-[1600px] mx-auto bg-white shadow-2xl  flex flex-col">
-              <Navbar /> 
-              <main className="container w-full mx-auto pb-2">
-                {children}
-              </main>
-              <Footer/>
-              </div>
-            </ProductProvider>
+              <ProductProvider> 
+                <div className="min-h-screen flex flex-col bg-white">
+                  <Navbar /> 
+                  <main className="flex-grow w-full max-w-[1600px] mx-auto  pb-10">
+                    {children}
+                  </main>
+                  <Footer/>
+                </div>
+              </ProductProvider>
             </CartProvider>
           </CurrencyProvider>
         </AuthProvider>
