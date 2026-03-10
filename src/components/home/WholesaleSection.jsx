@@ -5,7 +5,7 @@ import { Globe2, Briefcase, ArrowUpRight } from "lucide-react";
 const WholesaleSection = () => {
   return (
     <section className="py-20 md:py-32 px-6 bg-secondary text-white overflow-hidden">
-      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         <div className="space-y-8">
           <h2 className="text-3xl md:text-6xl font-[#333333] font-bold leading-[0.85] uppercase  tracking-tighter">
