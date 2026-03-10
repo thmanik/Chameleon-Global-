@@ -27,8 +27,8 @@ const Footer = async () => {
   };
 
   return (
-    <footer className="bg-[var(--foreground)] text-[var(--background)] pt-16 mt-20">
-      <div className="container mx-auto px-4 lg:px-8">
+    <footer className="bg-[#000000] text-primary pt-16 mt-20">
+      <div className="mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
           
           <div className="lg:col-span-4 space-y-6">
