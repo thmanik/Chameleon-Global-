@@ -21,8 +21,8 @@ const FeaturedProducts = () => {
   }
 
   return (
-    <section className=" py-2 md:py-6 px-6 bg-white">
-      <div className="max-w-[1400px] mx-auto">
+    <section className=" py-2 md:py-6 px-2 bg-white">
+      <div className="w-full mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-6 gap-4">
           <div>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold leading-tight text-secondary">
@@ -42,7 +42,7 @@ const FeaturedProducts = () => {
           </Link>
         </div>
 
-        {/* Product Grid */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
           {featuredDrops.length > 0 ? (
             featuredDrops.map((product) => (

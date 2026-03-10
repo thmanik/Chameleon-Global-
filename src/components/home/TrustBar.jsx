@@ -26,7 +26,7 @@ const TrustBar = () => {
 
   return (
     <section className="py-12 md:py-20 bg-white border-y border-gray-100">
-      <div className="max-w-[1400px] mx-auto px-6">
+      <div className="w-full mx-auto px-1">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
           {features.map((item, idx) => (
             <div 

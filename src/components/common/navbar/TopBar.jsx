@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const TopBar = ({ user }) => {
   return (
@@ -12,9 +13,9 @@ const TopBar = ({ user }) => {
         </p>
 
         <div className="hidden sm:flex gap-6">
-          <span className="cursor-pointer hover:text-primary transition">
+          <Link href="/track-order" className="cursor-pointer hover:text-primary transition">
             Track Order
-          </span>
+          </Link>
         </div>
       </div>
     </div>
