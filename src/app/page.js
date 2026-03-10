@@ -1,3 +1,4 @@
+import CategorySlider from "@/components/home/CategorySlider";
 import Hero from "@/components/home/Hero";
 
 export const metadata = {
@@ -7,8 +8,10 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-16 md:gap-24 pb-20">
+    <div className="flex flex-col gap-3 md:gap-16 ">
       <Hero />
+      {/* <CategoryShowcase/> */}
+      <CategorySlider/>
     </div>
   );
 }

@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
             <ProductProvider> 
               <div className="max-w-[1600px] mx-auto bg-white shadow-2xl min-h-screen flex flex-col">
               <Navbar /> 
-              <main className="container w-full mx-auto py-2">
+              <main className="container w-full mx-auto pb-2">
                 {children}
               </main>
               <Footer/>

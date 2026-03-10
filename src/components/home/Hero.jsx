@@ -3,12 +3,13 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useProducts } from "@/context/ProductContext";
-import { MoveRight, ShoppingBag, Loader2 } from "lucide-react";
+import { MoveRight, ShoppingBag } from "lucide-react";
 import Loading from "../ui/Loading";
 
 const Hero = () => {
   const { products, loading } = useProducts();
   const [currentSlide, setCurrentSlide] = useState(0);
+
   useEffect(() => {
     if (products.length === 0) return;
     const timer = setInterval(() => {
@@ -19,14 +20,14 @@ const Hero = () => {
 
   if (loading) {
     return (
-      <div className="w-full h-[75vh] min-h-[500px] mt-4 rounded-2xl overflow-hidden">
+      <div className="w-full h-[60vh] md:h-[75vh] min-h-[400px] md:min-h-[500px] mt-4 rounded-2xl overflow-hidden">
         <Loading text="Fetching Latest Trends" />
       </div>
     );
   }
 
   return (
-    <section className="relative w-full h-[75vh] min-h-[500px] overflow-hidden  bg-secondary group">
+    <section className="relative w-full h-[60vh] md:h-[75vh] min-h-[400px] md:min-h-[500px] overflow-hidden bg-secondary group">
       {products.map((product, index) => (
         <div
           key={product.id}
@@ -51,24 +52,24 @@ const Hero = () => {
                 Featured {product.category}
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight uppercase">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight uppercase">
                 {product.name}
               </h1>
 
-              <p className="text-sm md:text-base text-gray-300 max-w-md font-light leading-relaxed line-clamp-2">
+              <p className="text-xs md:text-base text-gray-300 max-w-md font-light leading-relaxed line-clamp-2">
                 {product.description}
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link
                   href={`/product/${product.slug}`}
-                  className="flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition-all duration-300"
+                  className="flex items-center gap-2 bg-primary text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full font-bold text-[10px] md:text-xs uppercase tracking-widest hover:bg-secondary transition-all duration-300"
                 >
                   Shop Now <ShoppingBag size={16} />
                 </Link>
                 <Link
                   href="/shop"
-                  className="flex items-center gap-2 px-8 py-3 rounded-full border border-white/20 text-white font-bold text-xs uppercase tracking-widest hover:bg-white/10 transition-all duration-300"
+                  className="flex items-center gap-2 px-6 md:px-8 py-2.5 md:py-3 rounded-full border border-white/20 text-white font-bold text-[10px] md:text-xs uppercase tracking-widest hover:bg-white/10 transition-all duration-300"
                 >
                   Collection <MoveRight size={16} />
                 </Link>
@@ -85,7 +86,7 @@ const Hero = () => {
         </div>
       ))}
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+      <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
         {products.map((_, index) => (
           <button
             key={index}

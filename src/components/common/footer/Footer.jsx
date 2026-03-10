@@ -31,7 +31,6 @@ const Footer = async () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
           
-          {/* Brand Info */}
           <div className="lg:col-span-4 space-y-6">
             <Link
               href="/"
@@ -46,7 +45,6 @@ const Footer = async () => {
             <SocialLinks />
           </div>
 
-          {/* Shop Links (CMS-like headings) */}
           <div className="lg:col-span-2 space-y-6">
             <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--primary)]">
               Shop
@@ -65,7 +63,6 @@ const Footer = async () => {
             </ul>
           </div>
 
-          {/* Support Links */}
           <div className="lg:col-span-2 space-y-6">
             <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--primary)]">
               Support
@@ -84,7 +81,7 @@ const Footer = async () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+
           <div className="lg:col-span-4 space-y-6">
             <h4 className="text-xs font-bold uppercase tracking-widest text-[var(--primary)]">
               Join the club
@@ -96,23 +93,19 @@ const Footer = async () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="py-8 border-t border-[var(--background)]/20 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[10px] font-medium text-[var(--background)]/40 uppercase tracking-widest">
+  
+        <div className=" py-1 md:py-2 mx-auto border-t border-primary/40  gap-6">
+          <p className="text-[10px] font-medium mx-auto text-white uppercase tracking-widest">
             © {currentYear} Chameleon Apparel Ltd.
           </p>
-          <img
-            src="/payment-methods.png"
-            alt="Payment"
-            className="h-5 grayscale opacity-50"
-          />
+          
         </div>
       </div>
     </footer>
   );
 };
 
-// Social Links helper
+
 const SocialLinks = () => (
   <div className="flex items-center gap-4">
     {[Facebook, Instagram, Twitter].map((Icon, i) => (
