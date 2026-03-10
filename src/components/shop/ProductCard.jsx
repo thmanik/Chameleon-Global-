@@ -38,7 +38,7 @@ const ProductCard = ({ product }) => {
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3 z-20">
           <button 
             onClick={handleAddToCart}
-            className="p-3 bg-white text-secondary border border-gray-200 shadow-xl hover:bg-primary hover:text-white rounded-full transition-all active:scale-95 flex items-center justify-center"
+            className="p-3 bg-white cursor-pointer text-secondary border border-gray-200 shadow-xl hover:bg-primary hover:text-white rounded-full transition-all active:scale-95 flex items-center justify-center"
           >
             <ShoppingBag size={18} />
           </button>

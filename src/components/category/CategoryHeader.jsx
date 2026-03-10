@@ -4,7 +4,7 @@ const CategoryHeader = ({ onScroll }) => {
   return (
     <div className="flex items-center justify-between mb-8">
       <div>
-        <h2 className="text-2xl md:text-3xl font-black text-secondary uppercase italic tracking-tighter">
+        <h2 className="text-xl md:text-2xl lg:text-3xl  font-bold text-secondary capitalize tracking-tighter">
           Shop by <span className="text-primary">Category</span>
         </h2>
       </div>

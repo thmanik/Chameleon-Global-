@@ -46,7 +46,7 @@ export default function ShopClient({ initialCategory }) {
     <div className="flex flex-col lg:flex-row gap-10">
       <aside className="hidden lg:block w-64">
         <div className="sticky top-28 space-y-6">
-          <h3 className="text-sm font-black uppercase tracking-widest text-secondary italic">
+          <h3 className="text-sm font-black uppercase tracking-widest text-secondary ">
             Categories
           </h3>
           <div className="flex flex-col gap-1">
@@ -69,7 +69,7 @@ export default function ShopClient({ initialCategory }) {
 
       <div className="flex-1">
         <div className="flex items-center justify-between mb-8 border-b pb-6">
-          <h1 className="text-2xl font-black text-secondary uppercase italic tracking-tighter">
+          <h1 className="text-2xl font-black text-secondary uppercase  tracking-tighter">
             {activeCategory === "all" ? "Our Collection" : activeCategory}
           </h1>
 

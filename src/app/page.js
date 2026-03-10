@@ -1,5 +1,8 @@
 import CategorySlider from "@/components/home/CategorySlider";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
 import Hero from "@/components/home/Hero";
+import TrustBar from "@/components/home/TrustBar";
+import WholesaleSection from "@/components/home/WholesaleSection";
 
 export const metadata = {
   title: "Home | Chameleon Global",
@@ -10,8 +13,10 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-3 md:gap-16 ">
       <Hero />
-      {/* <CategoryShowcase/> */}
       <CategorySlider/>
+      <FeaturedProducts/>
+      <WholesaleSection/>
+      <TrustBar/>
     </div>
   );
 }
