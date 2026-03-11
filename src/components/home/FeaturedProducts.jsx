@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
   return (
     <section className=" py-2 md:py-6 px-2 bg-white">
       <div className="w-full mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-6 gap-4">
+        <div className="flex flex-row justify-between items-end mb-6 gap-4">
           <div>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-bold leading-tight text-secondary">
               Latest 
