@@ -8,7 +8,7 @@ const TourSidebar = ({ rooms, activeRoom, isMenuOpen, onRoomChange }) => {
       <div className="w-80 p-6 pt-24 md:pt-32 flex flex-col h-full shrink-0">
         
         <div className="mb-8 border-b border-white/5 pb-6">
-          <h1 className="text-2xl font-black italic tracking-tighter uppercase leading-tight text-white">
+          <h1 className="text-2xl font-black tracking-tighter uppercase leading-tight text-white">
             Chameleon <br/> 
             <span className="text-primary tracking-[0.3em] text-[10px] font-bold">Virtual Lab</span>
           </h1>
